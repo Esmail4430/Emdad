@@ -126,10 +126,10 @@
 /* Mobile Navigation Improvements */
 @media (max-width: 1024px) {
   .mobile-nav-dropdown {
-    background-color: rgba(31, 59, 115, 0.98);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(184, 144, 32, 0.2);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background-color: rgba(31, 59, 115, 0.95);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(184, 144, 32, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
   
   /* Ensure mobile header is always visible */
@@ -151,6 +151,56 @@
     width: 100vw;
     overflow-x: hidden;
   }
+}
+
+/* Enhanced Navbar Styles */
+.navbar-glass {
+  background: rgba(31, 59, 115, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(184, 144, 32, 0.2);
+}
+
+.navbar-dropdown {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.breadcrumb-gradient {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+/* ScrollSpy Active States */
+.nav-link-active {
+  color: #B89020;
+  background-color: rgba(184, 144, 32, 0.1);
+  box-shadow: 0 4px 12px rgba(184, 144, 32, 0.2);
+}
+
+.nav-link-active::after {
+  width: 100% !important;
+}
+
+/* Enhanced Hover Effects */
+.nav-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item:hover {
+  transform: translateX(4px);
+  background: linear-gradient(90deg, rgba(184, 144, 32, 0.1) 0%, transparent 100%);
+}
+
+/* Smooth Transitions */
+.navbar-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Timeline specific RTL support */
